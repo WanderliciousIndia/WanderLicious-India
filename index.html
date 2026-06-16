@@ -541,12 +541,10 @@ footer {
 			document.getElementById('rzp-button1').onclick = async function(e) {
 				e.preventDefault();
 				// Call your backend to create an order
-  				const priceInRupees = 299;
-				const amountInPaise = priceInRupees * 100;
 				const response = await fetch("https://wanderlicious-backend.onrender.com/api/create-order", {
 					method: "POST",
 					headers: { "Content-Type": "application/json" },
-					body: JSON.stringify({ amount: amountInPaise, currency: "INR" })
+					body: JSON.stringify({ amount: 29900, currency: "INR" }) //Rs 299
 				});
 				
 				const order = await response.json();
