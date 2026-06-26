@@ -383,6 +383,38 @@ footer {
   background-color: #D4A843;
   color: #0c0c0c;
 }
+
+.book-header{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    padding:20px 30px;
+}
+
+.book-image{
+    width:90px;
+    height:auto;
+    border-radius:8px;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+    flex-shrink:0;
+}
+
+.book-info{
+    text-align:left;
+}
+
+.book-cover-title{
+    margin:0;
+    font-size:1.7rem;
+    line-height:1.3;
+}
+
+.book-days{
+    margin-top:8px;
+    color:#c49a4a;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
 </style>
 </head>
 <body>
@@ -521,10 +553,18 @@ footer {
       <div class="book-card">
         <div class="book-cover bc1">
           <div class="book-badge">eBooks</div>
-          <div class="book-emoji">🏯</div>
+          <!-- <div class="book-emoji">🏯</div> -->
 		  <!-- <img src="https://raw.githubusercontent.com/WanderliciousIndia/WanderLicious-India/main/TravlItn.png" alt="Himachal Pradesh Travel Guide Cover" class="book-image"> -->
-          <p class="book-cover-title">Wander Himachal - A complete Travel Itenary.</p>
-          <p class="book-days">6-Day Guide</p>
+          <div class="book-header">
+			<img
+			  src="https://raw.githubusercontent.com/WanderliciousIndia/WanderLicious-India/main/Cover%20Page.png"
+			  alt="Wander Himachal eBook"
+			  class="book-image">
+			  <div class="book-info">	
+				<p class="book-cover-title">Wander Himachal - A complete Travel Itinerary.</p>
+				<p class="book-days">6-Day Guide</p>
+			  </div>
+		  </div>	  
         </div>
         <div class="book-body">
           <p class="book-desc">Plan your perfect escape to the mountains with this curated Himachal Pradesh itinerary.
